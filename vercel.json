@@ -1,5 +1,6 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/docs/VC_BRIEF.html" }
+    { "source": "/", "destination": "/docs/VC_BRIEF.html" },
+    { "source": "/short", "destination": "/docs/VC_BRIEF_short.html" }
   ]
 }

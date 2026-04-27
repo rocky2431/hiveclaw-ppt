@@ -203,23 +203,27 @@
 <canvas id="bg-light" class="bg"></canvas>
 <div id="hint">← → 翻页 · ESC 索引</div>
 <div id="version-toggle">
-  <span class="v active">Full · 31</span>
+  <a href="/">Full · 31</a>
   <span class="sep">/</span>
-  <a href="/short">Short · 12</a>
+  <span class="v active">Short · 12</span>
 </div>
 
 <div id="deck">
 
-<section class="slide hero dark">
+<section class="slide hero light" data-animate="quote">
   <div class="chrome">
-    <div>VC Brief · 2026.04</div>
-    <div>Vol.01 · Hive</div>
+    <div>VC Brief · 2026.04 · Short Edition</div>
+    <div>01 / 12</div>
   </div>
   <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh">
     <div class="kicker" data-anim>Enterprise Agent Asset Infrastructure</div>
     <h1 class="h-hero" data-anim>Hive</h1>
-    <h2 class="h-sub" data-anim>Agent 时代的公司中台</h2>
-    <p class="lead" style="max-width:60vw" data-anim>
+    <h2 class="h-sub" data-anim>Agent 时代的组织资产中台</h2>
+    <blockquote style="font-family:var(--serif-en); font-style:italic; font-weight:500; font-size:3.6vw; line-height:1.18; letter-spacing:-.02em; max-width:78vw; margin-top:1vh">
+      <span data-anim="line" style="display:block">People rotate.</span>
+      <span data-anim="line" style="display:block">Agents shouldn't reset.</span>
+    </blockquote>
+    <p class="lead" style="max-width:60vw; opacity:.7" data-anim>
       让 Agent 沉淀为组织资产，而不是只活在个人账号里的临时工具。
     </p>
     <div class="meta-row" data-anim>
@@ -227,37 +231,15 @@
     </div>
   </div>
   <div class="foot">
-    <div>Hive · VC Brief</div>
+    <div>Hive · Cover + Thesis</div>
     <div>— 2026 —</div>
-  </div>
-</section>
-
-<section class="slide hero light" data-animate="quote">
-  <div class="chrome">
-    <div>Hive · The Thesis</div>
-    <div>02 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>The Thesis</div>
-    <blockquote style="font-family:var(--serif-en); font-style:italic; font-weight:500; font-size:6.4vw; line-height:1.12; letter-spacing:-.02em; max-width:78vw">
-      <span data-anim="line" style="display:block">People rotate.</span>
-      <span data-anim="line" style="display:block">Agents shouldn't reset.</span>
-    </blockquote>
-    <p class="lead" style="max-width:55vw; opacity:.65" data-anim>
-      人会流转，Agent 不该归零。<br>
-      前提是：Agent 沉淀为组织资产。
-    </p>
-  </div>
-  <div class="foot">
-    <div>The Thesis</div>
-    <div>— · —</div>
   </div>
 </section>
 
 <section class="slide hero dark">
   <div class="chrome">
     <div>Act I · The Problem</div>
-    <div>Act I · 03 / 31</div>
+    <div>02 / 12</div>
   </div>
   <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
     <div class="kicker" data-anim>Act I</div>
@@ -275,13 +257,16 @@
 <section class="slide light">
   <div class="chrome">
     <div>Act I · The Problem</div>
-    <div>Act I · 04 / 31</div>
+    <div>03 / 12</div>
   </div>
   <div class="frame">
-    <div class="kicker" data-anim>The Gaps</div>
-    <h2 class="h-xl" data-anim>企业部署 Agent 时<br>面对 5 个组织缺口</h2>
+    <div class="kicker" data-anim>The Gaps · The Shift · The Hidden Asset</div>
+    <h2 class="h-xl" data-anim>5 个组织缺口 + 一人部门时代</h2>
+    <p class="lead" style="margin-top:2.4vh; max-width:80vw" data-anim>
+      硅谷讲「一人公司」，生产级业务里真正稀缺的是<span class="hi">决策权</span>——跨域不可信，域内可压缩，部门规模被压缩到「一人 + 一组 Agent」。团队最宝贵的判断力，写不进文档。
+    </p>
 
-    <div style="margin-top:4vh; display:flex; flex-direction:column">
+    <div style="margin-top:3.4vh; display:flex; flex-direction:column">
       <div class="rowline" data-anim>
         <div class="k">长期记忆归谁？</div>
         <div class="v">往往跟随个人账号、聊天窗口或单一 SaaS</div>
@@ -304,103 +289,21 @@
       </div>
       <div class="rowline" data-anim>
         <div class="k">新负责人如何接手？</div>
-        <div class="v">Wiki / SOP 能交接流程，但很难交接真实决策口径</div>
+        <div class="v">Wiki / SOP 能交接流程，但很难交接真实判断口径——这才是组织的护城河</div>
         <div class="m">Handoff</div>
       </div>
     </div>
   </div>
   <div class="foot">
-    <div>Page 04 · The Gaps</div>
-    <div>5 Gaps</div>
+    <div>Page 03 · 5 Gaps + The Shift</div>
+    <div>The Hidden Asset</div>
   </div>
 </section>
 
-<section class="slide dark">
+<section class="slide hero dark">
   <div class="chrome">
     <div>Act I · The Problem</div>
-    <div>Act I · 05 / 31</div>
-  </div>
-  <div class="frame" style="padding-top:6vh">
-    <div class="kicker" data-anim>The Shift</div>
-    <h2 class="h-xl" data-anim>一人公司是叙事，<br>一人部门才是趋势。</h2>
-    <p class="lead" style="margin-top:4vh; max-width:70vw" data-anim>
-      硅谷反复在讲「AI 时代第一家独角兽只有一个员工」。这套叙事在 demo 层面成立。生产级业务里，Agent 时代真正稀缺的是<span class="hi">决策权</span>。
-    </p>
-    <p class="body-zh" style="margin-top:3vh; max-width:70vw" data-anim>
-      跨域决策（战略、法务、财务、产品、市场、人事）超出个人的认知边界与责任承担能力，必须由不同的人分担。域内执行可以由 1 个人 + 一组 Agent 完成，原本 10–20 人的部门规模被压缩到「一人部门」。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Page 05 · 组织转折</div>
-    <div>Act I</div>
-  </div>
-</section>
-
-<section class="slide light" data-animate="directional">
-  <div class="chrome">
-    <div>Act I · The Problem</div>
-    <div>Act I · 06 / 31</div>
-  </div>
-  <div class="frame" style="padding-top:5vh">
-    <div class="kicker" data-anim>Comparison</div>
-    <h2 class="h-xl" style="margin-bottom:4vh" data-anim>跨域不可信，域内可压缩</h2>
-
-    <div class="grid-2-6-6" style="gap:5vw 4vh">
-      <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
-        <div class="kicker" style="opacity:.9">一人公司 · 伪命题</div>
-        <h3 class="h-md" style="margin-top:2vh">跨域决策无法压缩</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
-          <li>决策范围：全公司跨域</li>
-          <li>认知带宽：超出个人上限</li>
-          <li>法律责任：全公司行为</li>
-          <li>Agent 跨域协调不可信</li>
-          <li>失败成本：公司死</li>
-        </ul>
-      </div>
-      <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
-        <div class="kicker" style="opacity:.9">一人部门 · 真实趋势</div>
-        <h3 class="h-md" style="margin-top:2vh">单域可由一人主理</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
-          <li>决策范围：单一职能</li>
-          <li>认知带宽：单域可覆盖</li>
-          <li>法律责任：部门动作</li>
-          <li>Agent 域内执行、检索、起草</li>
-          <li>失败成本：部门可纠正</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="foot">
-    <div>Page 06 · Before / After</div>
-    <div>组织对比</div>
-  </div>
-</section>
-
-<section class="slide hero light" data-animate="quote">
-  <div class="chrome">
-    <div>Act I · The Problem</div>
-    <div>07 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>The Hidden Asset</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:6vw; line-height:1.18; letter-spacing:-.01em; max-width:80vw">
-      <span data-anim="line" style="display:block">一个团队最宝贵的判断力，</span>
-      <span data-anim="line" style="display:block">写不进文档。</span>
-    </blockquote>
-    <p class="lead" style="max-width:60vw; opacity:.7" data-anim>
-      老市场总监为什么这一波预算压抖音、下一波压小红书；老客服为什么对这个客户用强势语气；老财务为什么愿意给 A 客户延期 30 天。这些<span class="hi">判断力</span>是组织真正的护城河，过去只活在每个人的脑子里，不在 Wiki 里，不在 SOP 里。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Page 07 · The Insight</div>
-    <div>— · —</div>
-  </div>
-</section>
-
-<section class="slide dark">
-  <div class="chrome">
-    <div>Act I · The Problem</div>
-    <div>Act I · 08 / 31</div>
+    <div>04 / 12</div>
   </div>
   <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
     <div class="kicker" data-anim>The New Risk</div>
@@ -410,25 +313,7 @@
     </p>
   </div>
   <div class="foot">
-    <div>Page 08 · 一人部门的代价</div>
-    <div>— · —</div>
-  </div>
-</section>
-
-<section class="slide hero dark">
-  <div class="chrome">
-    <div>Act II · The Product</div>
-    <div>Act II · 09 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>Act II</div>
-    <h1 class="h-hero" style="font-size:9vw" data-anim>The Product</h1>
-    <p class="lead" style="max-width:55vw" data-anim>
-      Hive 把 Agent 变成组织资产。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Act II · The Product</div>
+    <div>Page 04 · 一人部门的代价</div>
     <div>— · —</div>
   </div>
 </section>
@@ -436,137 +321,111 @@
 <section class="slide light">
   <div class="chrome">
     <div>Act II · The Product</div>
-    <div>Act II · 10 / 31</div>
+    <div>05 / 12</div>
   </div>
   <div class="frame">
-    <div class="kicker" data-anim>The Five W's</div>
-    <h2 class="h-xl" data-anim>Hive 解决 Agent 时代的<br>组织所有权问题</h2>
+    <div class="kicker" data-anim>Five Pillars · System of Record</div>
+    <h2 class="h-xl" data-anim>Hive 把 Agent 变成组织资产</h2>
+    <p class="lead" style="margin-top:2.4vh; max-width:80vw" data-anim>
+      像 Salesforce 之于 CRM、Workday 之于 HR——Hive 是企业 Agent 的<span class="hi">系统记录层（System of Record）</span>。
+    </p>
 
-    <div class="grid-3" style="margin-top:5vh; grid-template-rows:repeat(2,1fr); gap:3vh 3vw">
+    <div class="grid-3" style="margin-top:4.2vh; grid-template-rows:repeat(2,1fr); grid-auto-flow:row dense; gap:3vh 3vw">
       <div class="pillar" data-anim>
-        <div class="kicker">WHO</div>
-        <div class="t" style="font-size:1.9vw">Who they are</div>
-        <div class="d">Agent 的身份、角色、目标和工作边界沉淀在 soul.md</div>
+        <div class="kicker">01 · Identity</div>
+        <div class="t" style="font-size:1.9vw">Persistent Identity</div>
+        <div class="d">soul.md 记录角色、风格、目标、边界——稳定身份不因单次会话清零</div>
       </div>
       <div class="pillar" data-anim>
-        <div class="kicker">WHAT</div>
-        <div class="t" style="font-size:1.9vw">What they know</div>
-        <div class="d">对话、工具调用、工作结果进入 T0 / T2 / T3 长期记忆管线</div>
+        <div class="kicker">02 · Memory</div>
+        <div class="t" style="font-size:1.9vw">Long-term Memory</div>
+        <div class="d">T0 / T2 / T3 记忆管线 + Dream / Heartbeat 整理——真实工作中的判断逐步沉淀</div>
       </div>
       <div class="pillar" data-anim>
-        <div class="kicker">CAN</div>
-        <div class="t" style="font-size:1.9vw">What they can do</div>
-        <div class="d">所有工具调用经过 Security Zone、Capability Policy、Approval Flow</div>
+        <div class="kicker">03 · Governance</div>
+        <div class="t" style="font-size:1.9vw">Tool Governance</div>
+        <div class="d">Security Zone + Capability Policy + Approval Flow——企业敢把 Agent 接入业务系统</div>
       </div>
       <div class="pillar" data-anim>
-        <div class="kicker">WHERE</div>
-        <div class="t" style="font-size:1.9vw">Where they work</div>
-        <div class="d">飞书 / Slack / Teams / 企微 / 钉钉 / Discord 6 大企业通道</div>
+        <div class="kicker">04 · Channel</div>
+        <div class="t" style="font-size:1.9vw">Channel-native Work</div>
+        <div class="d">飞书 / Slack / Teams / 企微 / 钉钉 / Discord——Agent 在已有工作流中被使用</div>
       </div>
       <div class="pillar" data-anim>
-        <div class="kicker">HOW</div>
-        <div class="t" style="font-size:1.9vw">How they are inherited</div>
+        <div class="kicker">05 · Onboarding</div>
+        <div class="t" style="font-size:1.9vw">HR Agent Onboarding</div>
+        <div class="d">通过对话 5 分钟创建数字员工——从 IT 项目变成员工自助</div>
+      </div>
+      <div class="pillar" data-anim>
+        <div class="kicker">→ Inherit</div>
+        <div class="t" style="font-size:1.9vw">人事流转 · 资产留存</div>
         <div class="d">人员流转、岗位调整时，Agent 与记忆、权限、流程沉淀在组织</div>
-      </div>
-      <div class="pillar" data-anim style="opacity:.4">
-        <div class="kicker">→</div>
-        <div class="t" style="font-size:1.9vw; font-style:italic; opacity:.6">System of Record<br>for Enterprise Agents</div>
-        <div class="d" style="opacity:.7">五个维度组成 Hive 的产品骨架</div>
       </div>
     </div>
   </div>
   <div class="foot">
-    <div>Page 10 · Five W's</div>
-    <div>WHO · WHAT · CAN · WHERE · HOW</div>
+    <div>Page 05 · The Product</div>
+    <div>5 Pillars · SoR</div>
   </div>
 </section>
 
 <section class="slide dark">
   <div class="chrome">
     <div>Act II · The Product</div>
-    <div>Act II · 11 / 31</div>
+    <div>06 / 12</div>
   </div>
   <div class="frame">
-    <div class="kicker" data-anim>The Loop</div>
-    <h2 class="h-xl" data-anim>Agent 的完整生命周期</h2>
+    <div class="kicker" data-anim>The Loop · Memory Pyramid</div>
+    <h2 class="h-xl" data-anim>Agent 生命周期 + 4 层记忆金字塔</h2>
 
-    <div class="pipeline-section" style="margin-top:5vh">
-      <div class="pipeline-label">创建 → 上岗 → 工作</div>
-      <div class="pipeline" data-cols="4">
+    <div class="pipeline-section" style="margin-top:3.4vh">
+      <div class="pipeline-label">Lifecycle · 创建 → 上岗 → 工作 → 沉淀 → 继承</div>
+      <div class="pipeline" data-cols="6">
         <div class="step" data-anim>
           <div class="step-nb">01</div>
           <div class="step-title">创建</div>
-          <div class="step-desc">员工通过 HR Agent 创建数字员工</div>
+          <div class="step-desc">HR Agent 对话创建</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">02</div>
           <div class="step-title">soul.md</div>
-          <div class="step-desc">生成角色、目标、边界、协作方式</div>
+          <div class="step-desc">角色 · 目标 · 边界</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">03</div>
           <div class="step-title">通道接入</div>
-          <div class="step-desc">飞书 / Slack / Teams / 企微</div>
+          <div class="step-desc">飞书 / Slack / Teams</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">04</div>
           <div class="step-title">真实工作</div>
-          <div class="step-desc">调用工具、处理任务、触发流程</div>
+          <div class="step-desc">调用工具 · 处理任务</div>
         </div>
-      </div>
-    </div>
-
-    <div class="pipeline-section" style="margin-top:3vh">
-      <div class="pipeline-label">→ 沉淀与继承</div>
-      <div class="pipeline" data-cols="3">
         <div class="step" data-anim>
           <div class="step-nb">05</div>
-          <div class="step-title">记忆沉淀</div>
-          <div class="step-desc">T0 → T2 → T3 → soul.md 演化</div>
+          <div class="step-title">治理审计</div>
+          <div class="step-desc">权限策略 · 审批 · 审计</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">06</div>
-          <div class="step-title">治理审计</div>
-          <div class="step-desc">高风险动作经权限策略、审批和审计</div>
-        </div>
-        <div class="step" data-anim>
-          <div class="step-nb">07</div>
           <div class="step-title">人事流转 · 资产留存</div>
-          <div class="step-desc">记忆、流程、权限状态沉淀在组织</div>
+          <div class="step-desc">沉淀在组织</div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="foot">
-    <div>Page 11 · The Loop</div>
-    <div>7 Steps</div>
-  </div>
-</section>
 
-<section class="slide light">
-  <div class="chrome">
-    <div>Act II · The Product</div>
-    <div>Act II · 12 / 31</div>
-  </div>
-  <div class="frame">
-    <div class="kicker" data-anim>Memory Pyramid</div>
-    <h2 class="h-xl" data-anim>4 层记忆金字塔</h2>
-    <p class="lead" style="margin-top:3vh; max-width:70vw" data-anim>
-      让 Agent 在每一次实际工作中旁观、提取、沉淀——把"说不清的"逐步显性化。
-    </p>
-
-    <div class="pipeline-section" style="margin-top:5vh">
-      <div class="pipeline-label">Pipeline · 提取链路</div>
+    <div class="pipeline-section" style="margin-top:2.6vh">
+      <div class="pipeline-label">Memory · T0 → T2 → T3 → soul.md</div>
       <div class="pipeline" data-cols="4">
         <div class="step" data-anim>
           <div class="step-nb">T0</div>
           <div class="step-title">原始日志</div>
-          <div class="step-desc">每一次对话、每一次工具调用，30 天滚动</div>
+          <div class="step-desc">每一次对话、工具调用，30 天滚动</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">T2</div>
           <div class="step-title">情景学习</div>
-          <div class="step-desc">LLM 增量提取，per-response cursor</div>
+          <div class="step-desc">LLM 增量提取 · per-response cursor</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">T3</div>
@@ -582,72 +441,24 @@
     </div>
   </div>
   <div class="foot">
-    <div>Page 12 · 记忆架构</div>
-    <div>T0 → T2 → T3 → soul</div>
-  </div>
-</section>
-
-<section class="slide dark">
-  <div class="chrome">
-    <div>Act II · The Product</div>
-    <div>Act II · 13 / 31</div>
-  </div>
-  <div class="frame">
-    <div class="kicker" data-anim>Five Pillars</div>
-    <h2 class="h-xl" data-anim>把 Agent 做成数字员工资产</h2>
-
-    <div class="grid-3" style="margin-top:5vh; grid-template-rows:repeat(2,1fr); grid-auto-flow:row dense; gap:3vh 3vw">
-      <div class="pillar" data-anim>
-        <div class="kicker">01</div>
-        <div class="t" style="font-size:1.9vw">Persistent Identity</div>
-        <div class="d">soul.md 记录 Agent 的角色、风格、目标和边界——稳定身份不因单次会话清零</div>
-      </div>
-      <div class="pillar" data-anim>
-        <div class="kicker">02</div>
-        <div class="t" style="font-size:1.9vw">Long-term Memory</div>
-        <div class="d">T0 / T2 / T3 记忆管线 + Dream / Heartbeat 整理——真实工作中的判断逐步沉淀</div>
-      </div>
-      <div class="pillar" data-anim>
-        <div class="kicker">03</div>
-        <div class="t" style="font-size:1.9vw">Tool Governance</div>
-        <div class="d">Security Zone + Capability Policy + Approval Flow——企业敢把 Agent 接入业务系统</div>
-      </div>
-      <div class="pillar" data-anim>
-        <div class="kicker">04</div>
-        <div class="t" style="font-size:1.9vw">Channel-native Work</div>
-        <div class="d">飞书 / Slack / Teams / 企微 6 大 IM 通道——Agent 在员工已有工作流中被使用</div>
-      </div>
-      <div class="pillar" data-anim>
-        <div class="kicker">05</div>
-        <div class="t" style="font-size:1.9vw">HR Agent Onboarding</div>
-        <div class="d">通过对话创建数字员工——从 IT 项目变成员工自助</div>
-      </div>
-      <div class="pillar" data-anim style="opacity:.4">
-        <div class="kicker">→</div>
-        <div class="t" style="font-size:1.9vw; font-style:italic; opacity:.6">System of Record<br>for Enterprise Agents</div>
-        <div class="d" style="opacity:.7">五个支柱组成 Agent 资产中台的完整骨架</div>
-      </div>
-    </div>
-  </div>
-  <div class="foot">
-    <div>Page 13 · 产品架构</div>
-    <div>5 Pillars</div>
+    <div>Page 06 · Lifecycle + Memory</div>
+    <div>6 steps · 4 layers</div>
   </div>
 </section>
 
 <section class="slide light">
   <div class="chrome">
     <div>Act II · The Product</div>
-    <div>Act II · 14 / 31</div>
+    <div>07 / 12</div>
   </div>
   <div class="frame">
-    <div class="kicker" data-anim>Onboarding</div>
-    <h2 class="h-xl" data-anim>员工入职 = 招一个 Agent</h2>
-    <p class="lead" style="margin-top:3vh; max-width:70vw" data-anim>
+    <div class="kicker" data-anim>Onboarding · HR-agent</div>
+    <h2 class="h-xl" data-anim>客户用对话创建数字员工</h2>
+    <p class="lead" style="margin-top:2.4vh; max-width:75vw" data-anim>
       传统企业软件部署成本主要在培训——SAP、Salesforce 让员工上手需要驻场培训数月。Hive 把这件事压缩到 <span class="hi">5 分钟</span>。
     </p>
 
-    <div class="pipeline-section" style="margin-top:5vh">
+    <div class="pipeline-section" style="margin-top:3.4vh">
       <div class="pipeline-label">Day 1 · 入职流程</div>
       <div class="pipeline" data-cols="4">
         <div class="step" data-anim>
@@ -673,66 +484,29 @@
       </div>
     </div>
 
-    <p class="body-zh" style="margin-top:5vh; max-width:75vw" data-anim>
-      不写代码、不开后台、不需要 IT 介入。员工对待 Agent 像对待新同事。Agent 化的渗透速度从「IT 部门排期」变成「员工自助」，使用深度从签约第一天起就开始复利。
-    </p>
+    <div class="pipeline-section" style="margin-top:2.4vh">
+      <div class="pipeline-label">每个客户部署 · Hire · Identity · Inherit</div>
+      <p class="body-zh" data-anim style="margin-top:1vh; max-width:90vw; opacity:.78">
+        1 个负责人 + N 个由客户用 HR-agent 创建的部门 Agent + 1 套 soul 配置 + 1 套 skill pack + 3–5 个 trigger 配方 + IM 通道接入 + 审批和审计策略 + 30 天 ROI 看板。
+      </p>
+    </div>
   </div>
   <div class="foot">
-    <div>Page 14 · 入职即招 Agent</div>
+    <div>Page 07 · HR-agent Onboarding</div>
     <div>0 → 5min</div>
   </div>
 </section>
 
-<section class="slide hero dark" data-animate="quote">
-  <div class="chrome">
-    <div>Act II · The Product</div>
-    <div>15 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>The Anchor</div>
-    <blockquote style="font-family:var(--serif-en); font-style:italic; font-weight:500; font-size:5.4vw; line-height:1.18; letter-spacing:-.02em; max-width:82vw">
-      <span data-anim="line" style="display:block">Hive is the</span>
-      <span data-anim="line" style="display:block"><span class="hi">system of record</span></span>
-      <span data-anim="line" style="display:block">for enterprise agents.</span>
-    </blockquote>
-    <p class="lead" style="max-width:55vw; opacity:.7" data-anim>
-      像 Salesforce 之于 CRM，Workday 之于 HR——Hive 是 Agent 的资产账本。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Page 15 · Positioning</div>
-    <div>— · —</div>
-  </div>
-</section>
-
-<section class="slide hero light">
+<section class="slide dark">
   <div class="chrome">
     <div>Act III · Why Hive</div>
-    <div>Act III · 16 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>Act III</div>
-    <h1 class="h-hero" style="font-size:9vw" data-anim>Why Hive</h1>
-    <p class="lead" style="max-width:55vw" data-anim>
-      Agent 的资产账本，不是更强的聊天助手。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Act III · Why Hive</div>
-    <div>— · —</div>
-  </div>
-</section>
-
-<section class="slide light">
-  <div class="chrome">
-    <div>Act III · Why Hive</div>
-    <div>Act III · 17 / 31</div>
+    <div>08 / 12</div>
   </div>
   <div class="frame">
-    <div class="kicker" data-anim>The Map</div>
-    <h2 class="h-xl" data-anim>同样是 Agent，分类很重要</h2>
+    <div class="kicker" data-anim>The Map · The Quadrant · The Phases</div>
+    <h2 class="h-xl" data-anim>同样是 Agent，Hive 在哪打</h2>
 
-    <div style="margin-top:4vh; display:flex; flex-direction:column; gap:0">
+    <div style="margin-top:3.2vh; display:flex; flex-direction:column">
       <div class="rowline" data-anim>
         <div class="k">企业套件 Agent</div>
         <div class="v">Microsoft Copilot Studio · Salesforce Agentforce</div>
@@ -754,277 +528,14 @@
         <div class="m">单场景能力</div>
       </div>
       <div class="rowline" data-anim>
-        <div class="k">个人 / 通用 Agent</div>
-        <div class="v">Manus · OpenClaw · ChatGPT Agent</div>
-        <div class="m">个人体验</div>
+        <div class="k"><span class="hi">Hive · 通用 × 服务组织</span></div>
+        <div class="v">底层 Agent 框架 + 组织级治理 + 4 层记忆 + 全员零门槛接入——独立、跨平台、以组织资产继承为核心的 lifecycle layer</div>
+        <div class="m">Open Quadrant</div>
       </div>
     </div>
 
-    <p class="body-zh" style="margin-top:4vh; max-width:80vw; opacity:.78" data-anim>
-      Microsoft、Salesforce、Glean 的入场是<span class="hi">市场验证</span>——它们证明企业 Agent 已经进入预算周期。Hive 占据的缺口：独立、跨平台、以组织资产继承为核心的 Agent lifecycle layer。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Page 17 · 竞争矩阵</div>
-    <div>5 categories</div>
-  </div>
-</section>
-
-<section class="slide dark">
-  <div class="chrome">
-    <div>Act III · Why Hive</div>
-    <div>Act III · 18 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>The Open Quadrant</div>
-    <h1 class="h-hero" style="font-size:7.4vw" data-anim>
-      <span data-anim style="display:block">通用 × 服务组织</span>
-      <span data-anim style="display:block; opacity:.5">= Hive 的位置</span>
-    </h1>
-    <p class="lead" style="max-width:60vw" data-anim>
-      底层是 Agent 框架，与 OpenClaw 同层；同时承载组织级治理、4 层记忆沉淀、全员零门槛接入——这是单点厂商或个人产品补不上的。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Page 18 · 独占象限</div>
-    <div>— · —</div>
-  </div>
-</section>
-
-<section class="slide hero dark">
-  <div class="chrome">
-    <div>Act IV · Numbers & Model</div>
-    <div>Act IV · 19 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>Act IV</div>
-    <h1 class="h-hero" style="font-size:9vw" data-anim>The Numbers</h1>
-    <p class="lead" style="max-width:55vw" data-anim>
-      工程基础已就位。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Act IV · The Numbers</div>
-    <div>— · —</div>
-  </div>
-</section>
-
-<section class="slide light">
-  <div class="chrome">
-    <div>Act IV · Numbers & Model</div>
-    <div>Act IV · 20 / 31</div>
-  </div>
-  <div class="frame" style="padding-top:4vh">
-    <div class="kicker" data-anim>Product Evidence</div>
-    <h2 class="h-xl" data-anim>已实现的工程资产</h2>
-
-    <div class="grid-6" style="margin-top:5vh">
-      <div class="stat-card" data-anim>
-        <div class="stat-label">Backend Tests</div>
-        <div class="stat-nb">191<span class="stat-unit">个</span></div>
-        <div class="stat-note">backend test 文件</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-label">Frontend Tests</div>
-        <div class="stat-nb">17<span class="stat-unit">个</span></div>
-        <div class="stat-note">frontend test 文件</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-label">Memory Layers</div>
-        <div class="stat-nb">4<span class="stat-unit">层</span></div>
-        <div class="stat-note">T0 / T2 / T3 / soul.md</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-label">IM Channels</div>
-        <div class="stat-nb">6<span class="stat-unit">大</span></div>
-        <div class="stat-note">飞书 · Slack · Discord · 钉钉 · 企微 · Teams</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-label">Built-in Tools</div>
-        <div class="stat-nb">60<span class="stat-unit">+</span></div>
-        <div class="stat-note">file I/O · search · feishu · email · MCP</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-label">Parallel Branches</div>
-        <div class="stat-nb">6<span class="stat-unit">个月</span></div>
-        <div class="stat-note">Architecture × LLM 并行演进</div>
-      </div>
-    </div>
-  </div>
-  <div class="foot">
-    <div>Page 20 · 工程证据</div>
-    <div>repo: hiveclaw-main</div>
-  </div>
-</section>
-
-<section class="slide dark">
-  <div class="chrome">
-    <div>Act IV · Numbers & Model</div>
-    <div>Act IV · 21 / 31</div>
-  </div>
-  <div class="frame">
-    <div class="kicker" data-anim>Five Layers</div>
-    <h2 class="h-xl" data-anim>Agent 资产中台的完整骨架</h2>
-
-    <div style="margin-top:4vh; display:flex; flex-direction:column">
-      <div class="rowline" data-anim>
-        <div class="k">身份层</div>
-        <div class="v">Agent 有持久人格和岗位契约</div>
-        <div class="m">soul.md</div>
-      </div>
-      <div class="rowline" data-anim>
-        <div class="k">记忆层</div>
-        <div class="v">工作过程能沉淀成长期记忆</div>
-        <div class="m">T0 / T2 / T3</div>
-      </div>
-      <div class="rowline" data-anim>
-        <div class="k">权限层</div>
-        <div class="v">高风险工具调用可被策略和审批拦截</div>
-        <div class="m">Governance</div>
-      </div>
-      <div class="rowline" data-anim>
-        <div class="k">通道层</div>
-        <div class="v">Agent 能进入企业已有沟通场景</div>
-        <div class="m">6 Channels</div>
-      </div>
-      <div class="rowline" data-anim>
-        <div class="k">租户层</div>
-        <div class="v">公司级隔离和配置已经进入架构</div>
-        <div class="m">Multi-tenant + RLS</div>
-      </div>
-    </div>
-  </div>
-  <div class="foot">
-    <div>Page 21 · 5 层架构</div>
-    <div>Stack</div>
-  </div>
-</section>
-
-<section class="slide dark">
-  <div class="chrome">
-    <div>Act IV · Numbers & Model</div>
-    <div>Act IV · 22 / 31</div>
-  </div>
-  <div class="frame" style="padding-top:4vh">
-    <div class="kicker" data-anim>TAM</div>
-    <h2 class="h-xl" data-anim>万亿级 TAM</h2>
-
-    <div class="grid-3" style="margin-top:6vh; align-items:start">
-      <div class="stat-card" data-anim>
-        <div class="stat-label">Mid-Large Enterprises</div>
-        <div class="stat-nb">2<span class="stat-unit">百万家</span></div>
-        <div class="stat-note">全球中大型企业</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-label">Annual Spend Range</div>
-        <div class="stat-nb">50–500<span class="stat-unit">万 / 年</span></div>
-        <div class="stat-note">每家企业 license + usage credits</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-label">Total Addressable</div>
-        <div class="stat-nb">10<span class="stat-unit">万亿</span></div>
-        <div class="stat-note">理论市场上限</div>
-      </div>
-    </div>
-
-    <p class="body-zh" style="margin-top:6vh; max-width:78vw; opacity:.78" data-anim>
-      Microsoft / Salesforce / Glean 把企业 Agent 带入预算周期。当企业部署大量 Agent 后，需要一个独立资产层管理它们——这是 Hive 的位置。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Page 22 · 市场规模</div>
-    <div>TAM Sizing</div>
-  </div>
-</section>
-
-<section class="slide light">
-  <div class="chrome">
-    <div>Act IV · Numbers & Model</div>
-    <div>Act IV · 23 / 31</div>
-  </div>
-  <div class="frame">
-    <div class="kicker" data-anim>Token Economy</div>
-    <h2 class="h-xl" data-anim>三层收入结构</h2>
-    <p class="lead" style="margin-top:3vh; max-width:75vw" data-anim>
-      围绕「企业 Agent 资产中台」设计的收入结构。客户为 Agent 完成的工作、节省的人力、保留下来的组织记忆付费。
-    </p>
-
-    <div class="pipeline-section" style="margin-top:5vh">
-      <div class="pipeline-label">Three Revenue Streams</div>
-      <div class="pipeline" data-cols="3">
-        <div class="step" data-anim>
-          <div class="step-nb">01</div>
-          <div class="step-title">Enterprise License</div>
-          <div class="step-desc">按公司 / 部门 / 私有化部署年付。多租户 · 权限 · 审计 · SSO · 合规——企业稳定盘，毛利 90%+</div>
-        </div>
-        <div class="step" data-anim>
-          <div class="step-nb">02</div>
-          <div class="step-title">Usage Credits</div>
-          <div class="step-desc">按模型调用、工具调用、自动触发消耗。Agent 工作越多，客户价值与平台收入同步增长——复利复合</div>
-        </div>
-        <div class="step" data-anim>
-          <div class="step-nb">03</div>
-          <div class="step-title">Workflow Packs</div>
-          <div class="step-desc">行业 pack / 高级工具 / 深度集成按调用扣费。复用客户已沉淀的工具与配置，毛利 70–85%</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foot">
-    <div>Page 23 · 三层收入</div>
-    <div>License + Usage + Packs</div>
-  </div>
-</section>
-
-<section class="slide dark" data-animate="directional">
-  <div class="chrome">
-    <div>Act IV · Numbers & Model</div>
-    <div>Act IV · 24 / 31</div>
-  </div>
-  <div class="frame" style="padding-top:5vh">
-    <div class="kicker" data-anim>Pricing Paradigm</div>
-    <h2 class="h-xl" style="margin-bottom:4vh" data-anim>Usage 模式：与 Agent 主动性正向耦合</h2>
-
-    <div class="grid-2-6-6" style="gap:5vw 4vh">
-      <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
-        <div class="kicker" style="opacity:.9">Seat 模式</div>
-        <h3 class="h-md" style="margin-top:2vh">收入受员工数限制</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
-          <li>每加一个 Agent 都触发采购摩擦</li>
-          <li>与 Agent 主动性弱相关</li>
-          <li>容易被当成又一个 SaaS seat</li>
-          <li>收入天花板：员工数 × 单价</li>
-        </ul>
-      </div>
-      <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
-        <div class="kicker" style="opacity:.9">Hive Usage + License</div>
-        <h3 class="h-md" style="margin-top:2vh">随自动化深度增长</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
-          <li>钱包 / credits 承接持续消耗</li>
-          <li>Trigger / Heartbeat / Dream 都计量</li>
-          <li>更接近云资源 + 工作流自动化</li>
-          <li>无收入天花板</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="foot">
-    <div>Page 24 · 定价对比</div>
-    <div>Seat vs Usage</div>
-  </div>
-</section>
-
-<section class="slide light">
-  <div class="chrome">
-    <div>Act IV · Numbers & Model</div>
-    <div>25 / 31</div>
-  </div>
-  <div class="frame">
-    <div class="kicker" data-anim>Why Now</div>
-    <h2 class="h-xl" data-anim>从「人用 AI」<br>走向「人管理 Agent」</h2>
-
-    <div class="pipeline-section" style="margin-top:5vh">
-      <div class="pipeline-label">Three-Phase Evolution</div>
+    <div class="pipeline-section" style="margin-top:3vh">
+      <div class="pipeline-label">Three-Phase Evolution · Hive 面向 Phase 3</div>
       <div class="pipeline" data-cols="3">
         <div class="step" data-anim>
           <div class="step-nb">Phase 1</div>
@@ -1039,92 +550,154 @@
         <div class="step" data-anim>
           <div class="step-nb">Phase 3</div>
           <div class="step-title">Agent Organization</div>
-          <div class="step-desc">公司管理 Agent 的身份、权限、记忆、审计、交接</div>
+          <div class="step-desc">组织管理 Agent 的身份、权限、记忆、审计、交接</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>Page 08 · Why Hive</div>
+    <div>Map + Quadrant + Phases</div>
+  </div>
+</section>
+
+<section class="slide light">
+  <div class="chrome">
+    <div>Act IV · Numbers</div>
+    <div>09 / 12</div>
+  </div>
+  <div class="frame" style="padding-top:3vh">
+    <div class="kicker" data-anim>Engineering Evidence · TAM</div>
+    <h2 class="h-xl" data-anim>已就位的工程 + 待赢取的市场</h2>
+
+    <div class="pipeline-section" style="margin-top:3.4vh">
+      <div class="pipeline-label">Engineering · 已实现的工程资产</div>
+      <div class="grid-6" style="margin-top:2vh">
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Backend Tests</div>
+          <div class="stat-nb">191<span class="stat-unit">个</span></div>
+          <div class="stat-note">backend test 文件</div>
+        </div>
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Frontend Tests</div>
+          <div class="stat-nb">17<span class="stat-unit">个</span></div>
+          <div class="stat-note">frontend test 文件</div>
+        </div>
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Memory Layers</div>
+          <div class="stat-nb">4<span class="stat-unit">层</span></div>
+          <div class="stat-note">T0 / T2 / T3 / soul.md</div>
+        </div>
+        <div class="stat-card" data-anim>
+          <div class="stat-label">IM Channels</div>
+          <div class="stat-nb">6<span class="stat-unit">大</span></div>
+          <div class="stat-note">飞书 · Slack · Discord · 钉钉 · 企微 · Teams</div>
+        </div>
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Built-in Tools</div>
+          <div class="stat-nb">60<span class="stat-unit">+</span></div>
+          <div class="stat-note">file I/O · search · feishu · email · MCP</div>
+        </div>
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Parallel Branches</div>
+          <div class="stat-nb">6<span class="stat-unit">个月</span></div>
+          <div class="stat-note">Architecture × LLM 并行演进</div>
         </div>
       </div>
     </div>
 
-    <p class="lead" style="margin-top:6vh; max-width:75vw" data-anim>
-      Hive 面向第三阶段。
-    </p>
+    <div class="pipeline-section" style="margin-top:2.4vh">
+      <div class="pipeline-label">TAM · 万亿级市场上限</div>
+      <div class="grid-3" style="margin-top:1.6vh; align-items:start">
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Mid-Large Enterprises</div>
+          <div class="stat-nb">2<span class="stat-unit">百万家</span></div>
+          <div class="stat-note">全球中大型企业</div>
+        </div>
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Annual Spend Range</div>
+          <div class="stat-nb">50–500<span class="stat-unit">万 / 年</span></div>
+          <div class="stat-note">每家 license + usage credits</div>
+        </div>
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Total Addressable</div>
+          <div class="stat-nb">10<span class="stat-unit">万亿</span></div>
+          <div class="stat-note">理论市场上限</div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="foot">
-    <div>Page 25 · Three Phases</div>
-    <div>Phase 1 · 2 · 3</div>
+    <div>Page 09 · Numbers</div>
+    <div>Engineering + TAM</div>
   </div>
 </section>
 
-<section class="slide hero light">
+<section class="slide dark" data-animate="directional">
   <div class="chrome">
-    <div>Act V · The Ask</div>
-    <div>Act V · 26 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>Act V</div>
-    <h1 class="h-hero" style="font-size:9vw" data-anim>The Ask</h1>
-    <p class="lead" style="max-width:55vw" data-anim>
-      从工程能力到企业部署。
-    </p>
-  </div>
-  <div class="foot">
-    <div>Act V · The Ask</div>
-    <div>— · —</div>
-  </div>
-</section>
-
-<section class="slide dark">
-  <div class="chrome">
-    <div>Act V · The Ask</div>
-    <div>Act V · 27 / 31</div>
+    <div>Act IV · Model</div>
+    <div>10 / 12</div>
   </div>
   <div class="frame">
-    <div class="kicker" data-anim>HR-agent</div>
-    <h2 class="h-xl" data-anim>客户用对话创建数字员工</h2>
+    <div class="kicker" data-anim>Token Economy · Pricing Paradigm</div>
+    <h2 class="h-xl" data-anim>三层收入 · 与 Agent 主动性正向耦合</h2>
 
-    <div class="grid-3" style="margin-top:5vh; gap:3vh 3vw">
-      <div class="pillar" data-anim>
-        <div class="kicker">Hire · 对话创建</div>
-        <div class="t" style="font-size:1.9vw">HR-agent 对话</div>
-        <div class="d">负责人和 HR-agent 对话 · 定义岗位目标 · 职责边界 · 协作风格</div>
-        <div class="d" style="margin-top:1.4vh; font-family:var(--mono); font-size:max(11px,.88vw); letter-spacing:.18em; text-transform:uppercase; opacity:.55">Output · digital employee 草稿</div>
-      </div>
-      <div class="pillar" data-anim>
-        <div class="kicker">Identity · 身份固化</div>
-        <div class="t" style="font-size:1.9vw">soul.md 契约</div>
-        <div class="d">生成身份契约 · 进入企业租户 · 绑定权限和 IM 通道</div>
-        <div class="d" style="margin-top:1.4vh; font-family:var(--mono); font-size:max(11px,.88vw); letter-spacing:.18em; text-transform:uppercase; opacity:.55">Output · 可治理 Agent</div>
-      </div>
-      <div class="pillar" data-anim>
-        <div class="kicker">Inherit · 组织资产</div>
-        <div class="t" style="font-size:1.9vw">人员流转 · 资产沉淀</div>
-        <div class="d">身份 · 记忆 · 工作状态 · 审计 沉淀在组织</div>
-        <div class="d" style="margin-top:1.4vh; font-family:var(--mono); font-size:max(11px,.88vw); letter-spacing:.18em; text-transform:uppercase; opacity:.55">Output · 可继承资产</div>
+    <div class="pipeline-section" style="margin-top:3.4vh">
+      <div class="pipeline-label">Three Revenue Streams</div>
+      <div class="pipeline" data-cols="3">
+        <div class="step" data-anim>
+          <div class="step-nb">01</div>
+          <div class="step-title">Enterprise License</div>
+          <div class="step-desc">按公司 / 部门 / 私有化部署年付。多租户 · 权限 · 审计 · SSO · 合规——稳定盘，毛利 90%+</div>
+        </div>
+        <div class="step" data-anim>
+          <div class="step-nb">02</div>
+          <div class="step-title">Usage Credits</div>
+          <div class="step-desc">按模型调用、工具调用、自动触发消耗。Agent 工作越多，收入与客户价值同步——复利复合</div>
+        </div>
+        <div class="step" data-anim>
+          <div class="step-nb">03</div>
+          <div class="step-title">Workflow Packs</div>
+          <div class="step-desc">行业 pack / 高级工具 / 深度集成按调用扣费。复用客户已沉淀的工具与配置，毛利 70–85%</div>
+        </div>
       </div>
     </div>
 
-    <div class="pipeline-section" style="margin-top:4vh">
-      <div class="pipeline-label">每个客户部署</div>
-      <p class="body-zh" data-anim style="margin-top:1vh; max-width:90vw; opacity:.78">
-        1 个负责人 + N 个由客户用 HR-agent 创建的部门 Agent + 1 套 soul 配置 + 1 套 skill pack + 3–5 个 trigger 配方 + IM 通道接入 + 审批和审计策略 + 30 天 ROI 看板。
-      </p>
+    <div class="grid-2-6-6" style="margin-top:3vh; gap:5vw 3vh">
+      <div data-anim="left" style="padding:2.4vh 2vw; border-left:3px solid currentColor; opacity:.55">
+        <div class="kicker" style="opacity:.9">Seat 模式 · 收入受员工数限制</div>
+        <ul style="margin-top:1.4vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1vh; font-family:var(--sans-zh); font-size:max(13px,1vw); line-height:1.55">
+          <li>每加一个 Agent 都触发采购摩擦</li>
+          <li>容易被当成又一个 SaaS seat</li>
+          <li>收入天花板：员工数 × 单价</li>
+        </ul>
+      </div>
+      <div data-anim="right" style="padding:2.4vh 2vw; border-left:3px solid currentColor">
+        <div class="kicker" style="opacity:.9">Hive Usage + License · 随自动化深度增长</div>
+        <ul style="margin-top:1.4vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1vh; font-family:var(--sans-zh); font-size:max(13px,1vw); line-height:1.55">
+          <li>钱包 / credits 承接持续消耗</li>
+          <li>Trigger / Heartbeat / Dream 都计量</li>
+          <li>无收入天花板</li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="foot">
-    <div>Page 27 · HR-agent 部署</div>
-    <div>Hire · Identity · Inherit</div>
+    <div>Page 10 · Business Model</div>
+    <div>3 streams · Seat vs Usage</div>
   </div>
 </section>
 
 <section class="slide light">
   <div class="chrome">
     <div>Act V · The Ask</div>
-    <div>Act V · 28 / 31</div>
+    <div>11 / 12</div>
   </div>
   <div class="frame">
-    <div class="kicker" data-anim>Roadmap</div>
-    <h2 class="h-xl" data-anim>从 HR-agent 到中台到系统记录层</h2>
+    <div class="kicker" data-anim>Roadmap · The Commitment</div>
+    <h2 class="h-xl" data-anim>从 HR-agent 到 Agent 系统记录层</h2>
 
-    <div class="pipeline-section" style="margin-top:5vh">
+    <div class="pipeline-section" style="margin-top:3.4vh">
       <div class="pipeline-label">36-Month Plan</div>
       <div class="pipeline" data-cols="3">
         <div class="step" data-anim>
@@ -1134,47 +707,34 @@
         </div>
         <div class="step" data-anim>
           <div class="step-nb">6–18 mo</div>
-          <div class="step-title">从 HR-agent 到 Workflow 中台</div>
-          <div class="step-desc">Workflow Packs 体系 · 私有化 + SSO + 审计 · CRM/ERP/HRIS 行业集成 · NRR 指标</div>
+          <div class="step-title">Workflow 中台</div>
+          <div class="step-desc">Workflow Packs · 私有化 + SSO + 审计 · CRM/ERP/HRIS 集成 · NRR 指标</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">18–36 mo</div>
           <div class="step-title">企业 Agent 系统记录层</div>
-          <div class="step-desc">Agent registry / memory / policy / audit 层 · 第三方 pack 生态 · 政企国央落地</div>
+          <div class="step-desc">Agent registry / memory / policy / audit · 第三方 pack 生态 · 政企国央落地</div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="foot">
-    <div>Page 28 · Roadmap</div>
-    <div>Phase 1 · 2 · 3</div>
-  </div>
-</section>
 
-<section class="slide light">
-  <div class="chrome">
-    <div>Act V · The Ask</div>
-    <div>Act V · 29 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>The Commitment</div>
-    <h1 class="h-hero" style="font-size:6vw; line-height:1.18">
-      <span data-anim style="display:block">6 个月内证明：</span>
-      <span data-anim style="display:block">一位部门负责人换岗后，</span>
-      <span data-anim style="display:block">团队仍能通过 Hive Agent 继承</span>
-      <span data-anim style="display:block; opacity:.62">他的上下文、判断口径、关键工作流。</span>
-    </h1>
+    <div class="pipeline-section" style="margin-top:3vh">
+      <div class="pipeline-label">The Commitment</div>
+      <p class="lead" data-anim style="margin-top:1vh; max-width:90vw">
+        <strong>6 个月内证明：</strong>一位部门负责人换岗后，团队仍能通过 Hive Agent 继承他的上下文、判断口径、关键工作流。
+      </p>
+    </div>
   </div>
   <div class="foot">
-    <div>Page 29 · The Commitment</div>
-    <div>— · —</div>
+    <div>Page 11 · Roadmap + Commitment</div>
+    <div>Phase 1 · 2 · 3</div>
   </div>
 </section>
 
 <section class="slide hero dark" data-animate="quote">
   <div class="chrome">
-    <div>Investor Takeaway</div>
-    <div>30 / 31</div>
+    <div>Closing · Contact</div>
+    <div>12 / 12</div>
   </div>
   <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
     <div class="kicker" data-anim>Closing Statement</div>
@@ -1183,36 +743,15 @@
       <span data-anim="line" style="display:block; opacity:.78; font-size:.72em; margin-top:1.6vh">Hive makes agents</span>
       <span data-anim="line" style="display:block; opacity:.78; font-size:.72em">organization-owned, governed, and inheritable.</span>
     </blockquote>
-    <div class="meta-row" data-anim>
-      <span>Hive</span><span>·</span><span>Enterprise Agent Asset Infrastructure</span><span>·</span><span>2026</span>
-    </div>
-  </div>
-  <div class="foot">
-    <div>Page 30 · Closing</div>
-    <div>— · —</div>
-  </div>
-</section>
-
-<section class="slide hero light">
-  <div class="chrome">
-    <div>Hive · Thank You</div>
-    <div>31 / 31</div>
-  </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
-    <div class="kicker" data-anim>Let's talk</div>
-    <h1 class="h-hero" style="font-size:8.5vw" data-anim>Hive</h1>
-    <p class="lead" style="max-width:60vw" data-anim>
+    <p class="lead" style="max-width:60vw; opacity:.7" data-anim>
       Open source · Enterprise-ready · Looking for early enterprise customers and seed investors.
     </p>
     <div class="meta-row" data-anim>
-      <span>github.com/rocky2431/hiveclaw</span>
+      <span>github.com/rocky2431/hiveclaw</span><span>·</span><span>Hive · 2026</span>
     </div>
-    <p class="body-serif" style="margin-top:3vh; opacity:.6; font-size:1.2vw" data-anim>
-      Thank you.
-    </p>
   </div>
   <div class="foot">
-    <div>End of deck</div>
+    <div>End of deck · Thank You</div>
     <div>— Hive · 2026 —</div>
   </div>
 </section>
