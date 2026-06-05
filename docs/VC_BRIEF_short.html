@@ -324,48 +324,48 @@
     <div>05 / 12</div>
   </div>
   <div class="frame">
-    <div class="kicker" data-anim>Five Pillars · System of Record</div>
-    <h2 class="h-xl" data-anim>Hive 把 Agent 变成组织资产</h2>
+    <div class="kicker" data-anim>Control Plane · System of Record</div>
+    <h2 class="h-xl" data-anim>Hive 把 Agent 变成<br>可治理的组织资产</h2>
     <p class="lead" style="margin-top:2.4vh; max-width:80vw" data-anim>
-      像 Salesforce 之于 CRM、Workday 之于 HR——Hive 是企业 Agent 的<span class="hi">系统记录层（System of Record）</span>。
+      不是再做一个 Agent Builder，而是把身份、记忆、执行、治理、通道和资产晋升收进同一个控制面。
     </p>
 
     <div class="grid-3" style="margin-top:4.2vh; grid-template-rows:repeat(2,1fr); grid-auto-flow:row dense; gap:3vh 3vw">
       <div class="pillar" data-anim>
         <div class="kicker">01 · Identity</div>
-        <div class="t" style="font-size:1.9vw">Persistent Identity</div>
-        <div class="d">soul.md 记录角色、风格、目标、边界——稳定身份不因单次会话清零</div>
+        <div class="t" style="font-size:1.9vw">Agent Registry</div>
+        <div class="d">Agent row + tenant boundary + soul.md，明确数字员工是谁、归谁、能代表谁</div>
       </div>
       <div class="pillar" data-anim>
         <div class="kicker">02 · Memory</div>
-        <div class="t" style="font-size:1.9vw">Long-term Memory</div>
-        <div class="d">T0 / T2 / T3 记忆管线 + Dream / Heartbeat 整理——真实工作中的判断逐步沉淀</div>
+        <div class="t" style="font-size:1.9vw">MD-first Memory</div>
+        <div class="d">Markdown 是 durable truth source；索引、图谱、UI read model 都可重建</div>
       </div>
       <div class="pillar" data-anim>
-        <div class="kicker">03 · Governance</div>
-        <div class="t" style="font-size:1.9vw">Tool Governance</div>
-        <div class="d">Security Zone + Capability Policy + Approval Flow——企业敢把 Agent 接入业务系统</div>
+        <div class="kicker">03 · Execution</div>
+        <div class="t" style="font-size:1.9vw">Plan × Workflow</div>
+        <div class="d">Plan Mode 管确认边界；Workflow 管确定性控制流、journal、resume、replay</div>
       </div>
       <div class="pillar" data-anim>
-        <div class="kicker">04 · Channel</div>
-        <div class="t" style="font-size:1.9vw">Channel-native Work</div>
-        <div class="d">飞书 / Slack / Teams / 企微 / 钉钉 / Discord——Agent 在已有工作流中被使用</div>
+        <div class="kicker">04 · Governance</div>
+        <div class="t" style="font-size:1.9vw">Tool & Data Gate</div>
+        <div class="d">Security Zone → Capability Gate → Approval / Audit，工具调用不绕过平台治理</div>
       </div>
       <div class="pillar" data-anim>
-        <div class="kicker">05 · Onboarding</div>
-        <div class="t" style="font-size:1.9vw">HR Agent Onboarding</div>
-        <div class="d">通过对话 5 分钟创建数字员工——从 IT 项目变成员工自助</div>
+        <div class="kicker">05 · Channels</div>
+        <div class="t" style="font-size:1.9vw">Work Surfaces</div>
+        <div class="d">Web chat、飞书 / Lark、Slack、Discord、钉钉、企微、Teams 接入同一 kernel</div>
       </div>
       <div class="pillar" data-anim>
-        <div class="kicker">→ Inherit</div>
-        <div class="t" style="font-size:1.9vw">人事流转 · 资产留存</div>
-        <div class="d">人员流转、岗位调整时，Agent 与记忆、权限、流程沉淀在组织</div>
+        <div class="kicker">06 · Assets</div>
+        <div class="t" style="font-size:1.9vw">Company Asset Foundry</div>
+        <div class="d">Skill / Workflow / Subagent 从实践晋升公司库，带 provenance、版本和审核</div>
       </div>
     </div>
   </div>
   <div class="foot">
     <div>Page 05 · The Product</div>
-    <div>5 Pillars · SoR</div>
+    <div>Control Plane · SoR</div>
   </div>
 </section>
 
@@ -375,74 +375,74 @@
     <div>06 / 12</div>
   </div>
   <div class="frame">
-    <div class="kicker" data-anim>The Loop · Memory Pyramid</div>
-    <h2 class="h-xl" data-anim>Agent 生命周期 + 4 层记忆金字塔</h2>
+    <div class="kicker" data-anim>Runtime · Memory</div>
+    <h2 class="h-xl" data-anim>一次 Agent 动作的真实路径</h2>
 
     <div class="pipeline-section" style="margin-top:3.4vh">
-      <div class="pipeline-label">Lifecycle · 创建 → 上岗 → 工作 → 沉淀 → 继承</div>
+      <div class="pipeline-label">Runtime · channel → kernel → gate → workflow → leaf → audit</div>
       <div class="pipeline" data-cols="6">
         <div class="step" data-anim>
           <div class="step-nb">01</div>
-          <div class="step-title">创建</div>
-          <div class="step-desc">HR Agent 对话创建</div>
+          <div class="step-title">入口</div>
+          <div class="step-desc">Web / IM / Trigger</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">02</div>
-          <div class="step-title">soul.md</div>
-          <div class="step-desc">角色 · 目标 · 边界</div>
+          <div class="step-title">Kernel</div>
+          <div class="step-desc">tenant · agent · context</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">03</div>
-          <div class="step-title">通道接入</div>
-          <div class="step-desc">飞书 / Slack / Teams</div>
+          <div class="step-title">Plan Gate</div>
+          <div class="step-desc">confirmed plan · fail-closed</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">04</div>
-          <div class="step-title">真实工作</div>
-          <div class="step-desc">调用工具 · 处理任务</div>
+          <div class="step-title">Workflow</div>
+          <div class="step-desc">RuntimeTask · step journal</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">05</div>
-          <div class="step-title">治理审计</div>
-          <div class="step-desc">权限策略 · 审批 · 审计</div>
+          <div class="step-title">Leaf</div>
+          <div class="step-desc">subagent · tool · fanout</div>
         </div>
         <div class="step" data-anim>
           <div class="step-nb">06</div>
-          <div class="step-title">人事流转 · 资产留存</div>
-          <div class="step-desc">沉淀在组织</div>
+          <div class="step-title">Govern</div>
+          <div class="step-desc">capability · approval · audit</div>
         </div>
       </div>
     </div>
 
     <div class="pipeline-section" style="margin-top:2.6vh">
-      <div class="pipeline-label">Memory · T0 → T2 → T3 → soul.md</div>
+      <div class="pipeline-label">Memory · evidence → Markdown truth → promotion</div>
       <div class="pipeline" data-cols="4">
         <div class="step" data-anim>
-          <div class="step-nb">T0</div>
-          <div class="step-title">原始日志</div>
-          <div class="step-desc">每一次对话、工具调用，30 天滚动</div>
+          <div class="step-nb">01</div>
+          <div class="step-title">Capture</div>
+          <div class="step-desc">消息、RuntimeTask、工具结果留 source refs</div>
         </div>
         <div class="step" data-anim>
-          <div class="step-nb">T2</div>
-          <div class="step-title">情景学习</div>
-          <div class="step-desc">LLM 增量提取 · per-response cursor</div>
+          <div class="step-nb">02</div>
+          <div class="step-title">T0 → T2</div>
+          <div class="step-desc">atom candidate · schema/policy 校验</div>
         </div>
         <div class="step" data-anim>
-          <div class="step-nb">T3</div>
-          <div class="step-title">语义记忆</div>
-          <div class="step-desc">Heartbeat 每 45 分钟 curation</div>
+          <div class="step-nb">03</div>
+          <div class="step-title">T3 Markdown</div>
+          <div class="step-desc">scene / wiki / knowledge 可审计沉淀</div>
         </div>
         <div class="step" data-anim>
-          <div class="step-nb">·</div>
-          <div class="step-title">soul.md 身份契约</div>
-          <div class="step-desc">Dream 引擎在 4h + 3 会话凝结</div>
+          <div class="step-nb">04</div>
+          <div class="step-title">Promote</div>
+          <div class="step-desc">晋升 soul / skill / workflow，或退休归档</div>
         </div>
       </div>
     </div>
   </div>
   <div class="foot">
-    <div>Page 06 · Lifecycle + Memory</div>
-    <div>6 steps · 4 layers</div>
+    <div>Page 06 · Runtime + Memory</div>
+    <div>Plan × Workflow · MD-first</div>
   </div>
 </section>
 
@@ -574,57 +574,44 @@
       <div class="pipeline-label">Engineering · 已实现的工程资产</div>
       <div class="grid-6" style="margin-top:2vh">
         <div class="stat-card" data-anim>
-          <div class="stat-label">Backend Tests</div>
-          <div class="stat-nb">191<span class="stat-unit">个</span></div>
-          <div class="stat-note">backend test 文件</div>
+          <div class="stat-label">Backend Test Files</div>
+          <div class="stat-nb">454<span class="stat-unit">个</span></div>
+          <div class="stat-note">当前 backend/tests 中 test_*.py 文件</div>
         </div>
         <div class="stat-card" data-anim>
-          <div class="stat-label">Frontend Tests</div>
-          <div class="stat-nb">17<span class="stat-unit">个</span></div>
-          <div class="stat-note">frontend test 文件</div>
+          <div class="stat-label">Frontend Test Files</div>
+          <div class="stat-nb">98<span class="stat-unit">个</span></div>
+          <div class="stat-note">当前 frontend test/spec 文件</div>
         </div>
         <div class="stat-card" data-anim>
           <div class="stat-label">Memory Layers</div>
           <div class="stat-nb">4<span class="stat-unit">层</span></div>
-          <div class="stat-note">T0 / T2 / T3 / soul.md</div>
+          <div class="stat-note">T0 / T2 / T3 / soul.md，Markdown 为真相源</div>
+        </div>
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Workflow Models</div>
+          <div class="stat-nb">4<span class="stat-unit">张</span></div>
+          <div class="stat-note">definition · step · leaf call · quota</div>
+        </div>
+        <div class="stat-card" data-anim>
+          <div class="stat-label">Gate Layers</div>
+          <div class="stat-nb">3<span class="stat-unit">层</span></div>
+          <div class="stat-note">Security Zone → Capability Gate → Approval / Audit</div>
         </div>
         <div class="stat-card" data-anim>
           <div class="stat-label">IM Channels</div>
           <div class="stat-nb">6<span class="stat-unit">大</span></div>
           <div class="stat-note">飞书 · Slack · Discord · 钉钉 · 企微 · Teams</div>
         </div>
-        <div class="stat-card" data-anim>
-          <div class="stat-label">Built-in Tools</div>
-          <div class="stat-nb">60<span class="stat-unit">+</span></div>
-          <div class="stat-note">file I/O · search · feishu · email · MCP</div>
-        </div>
-        <div class="stat-card" data-anim>
-          <div class="stat-label">Parallel Branches</div>
-          <div class="stat-nb">6<span class="stat-unit">个月</span></div>
-          <div class="stat-note">Architecture × LLM 并行演进</div>
-        </div>
       </div>
     </div>
 
-    <div class="pipeline-section" style="margin-top:2.4vh">
+    <div class="pipeline-section" style="margin-top:1.8vh">
       <div class="pipeline-label">TAM · 万亿级市场上限</div>
-      <div class="grid-3" style="margin-top:1.6vh; align-items:start">
-        <div class="stat-card" data-anim>
-          <div class="stat-label">Mid-Large Enterprises</div>
-          <div class="stat-nb">2<span class="stat-unit">百万家</span></div>
-          <div class="stat-note">全球中大型企业</div>
-        </div>
-        <div class="stat-card" data-anim>
-          <div class="stat-label">Annual Spend Range</div>
-          <div class="stat-nb">50–500<span class="stat-unit">万 / 年</span></div>
-          <div class="stat-note">每家 license + usage credits</div>
-        </div>
-        <div class="stat-card" data-anim>
-          <div class="stat-label">Total Addressable</div>
-          <div class="stat-nb">10<span class="stat-unit">万亿</span></div>
-          <div class="stat-note">理论市场上限</div>
-        </div>
-      </div>
+      <p class="body-zh" data-anim style="margin-top:.8vh; max-width:90vw; font-size:max(14px,1.05vw); line-height:1.35; opacity:.78">
+        全球中大型企业约 <span class="hi">2 百万家</span>；每家 license + usage credits 年付 <span class="hi">50–500 万</span>；
+        理论上限约 <span class="hi">10 万亿</span>。
+      </p>
     </div>
   </div>
   <div class="foot">

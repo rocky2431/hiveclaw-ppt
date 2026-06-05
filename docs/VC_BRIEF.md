@@ -80,27 +80,35 @@ Hive 的核心闭环不是一次性创建，而是持续循环：
 
 这条闭环让 Agent 不只是聊天助手，而是可管理的“数字员工资产”。
 
-### 3.2 六个产品支柱
+### 3.2 六个控制面
 
-| 支柱 | Hive 做什么 | 对企业的价值 |
+Hive 的核心不是再做一个 Agent Builder，而是把企业 Agent 放进同一个控制面：
+
+| 控制面 | Hive 做什么 | 当前技术锚点 |
 |---|---|---|
-| Persistent Identity | `soul.md` 记录 Agent 的角色、风格、目标和边界 | Agent 有稳定身份，不因单次会话清零 |
-| Long-term Memory | T0/T2/T3 记忆管线和 Dream/Heartbeat 整理 | 真实工作中的判断逐步沉淀 |
-| Enterprise Permission Control | 用户、角色、部门、租户、资源级权限共同决定谁能查看、使用、管理 Agent | Agent 能进入真实组织结构，而不是停留在个人账号里 |
-| Tool Governance | Security Zone、Capability Policy、Approval Flow | 企业敢把 Agent 接入邮件、文档、IM、业务系统 |
-| Channel-native Work | 多 IM 通道和企业工具集成 | Agent 在员工已有工作流中被使用 |
-| HR Agent Onboarding | 通过对话创建数字员工 | 降低部署门槛，从 IT 项目变成员工自助 |
+| Identity Registry | Agent row、tenant boundary、`soul.md` 共同定义数字员工是谁、归谁、能代表谁工作 | `Agent`、`soul.md`、HR `create_digital_employee` |
+| MD-first Memory | Markdown 是 durable truth source；索引、向量、图谱、UI read model 都是可重建加速层 | T0/T2/T3、Memory Control Plane、wiki/scene Markdown |
+| Execution Control | Plan Mode 管确认边界；Workflow 管确定性执行控制流 | `PlanModeGate`、`RuntimeTask(task_type="workflow")` |
+| Tool & Data Governance | 工具调用穿过 Security Zone → Capability Gate → Approval / Audit | `run_tool_governance`、`CapabilityPolicy`、`ApprovalRequest` |
+| Channel Surface | Web chat、飞书 / Lark、Slack、Discord、钉钉、企微、Teams 接入同一 kernel | channel APIs + Agent Kernel |
+| Company Asset Foundry | Skill / Workflow / Subagent 从 agent 实践晋升公司库，带 provenance、版本和审核 | skill candidate lane、workflow promote、subagent definition |
 
-### 3.3 权限控制是独立基础层
+### 3.3 当前技术架构
 
-Hive 的权限不是单点开关，而是两层控制面：
+一次 Agent 动作在 Hive 里的真实路径：
 
-| 控制面 | 解决的问题 | 典型能力 |
-|---|---|---|
-| Human → Agent | 谁能查看、使用、管理、交接某个 Agent | platform admin / org admin / creator / company / department / user / resource permission |
-| Agent → Tool / Data | Agent 能调用哪些工具、访问哪些外部系统、哪些动作需要审批 | Security Zone、Capability Policy、Guard Policy、Approval Flow、Audit Log |
+```text
+Web / IM / Trigger / API
+  -> Agent Kernel + tenant/user/agent context
+  -> PlanModeGate confirmed plan boundary
+  -> Workflow Runtime when deterministic control flow is required
+  -> subagent / tool / channel leaf execution
+  -> Security Zone + Capability Gate + Approval / Audit
+  -> RuntimeTask / Work Ledger / Memory source refs
+  -> Memory or asset promotion candidate
+```
 
-这层权限控制决定 Hive 能否进入企业生产环境。没有它，Agent 只能是个人效率工具；有了它，Agent 才能成为可部署、可授权、可审计、可交接的公司资产。
+这个分层决定 Hive 能否进入企业生产环境。没有确认边界、执行 journal、工具治理和可审计记忆，Agent 只能是个人效率工具；有了这些边界，Agent 才能成为可部署、可授权、可审计、可交接的公司资产。
 
 ---
 
@@ -142,8 +150,10 @@ Hive 的定位不是替代所有 Agent，而是成为企业 Agent 的资产层�
 | 能力 | 当前证据 |
 |---|---|
 | Agent Kernel | `backend/app/kernel/engine.py`，统一处理 WebSocket、通道、Trigger、Heartbeat、Delegation 等路径 |
-| 4 层记忆 | `backend/app/services/memory_service.py`、`backend/app/services/auto_dream.py`、`backend/app/services/heartbeat.py` |
+| MD-first 记忆 | `docs/agent-memory-md-first-spec.md` 明确 Markdown 为 durable truth source；`backend/app/services/memory_service.py`、`auto_dream.py`、`heartbeat.py` 支撑 T0/T2/T3/soul |
 | `soul.md` 身份契约 | Kernel、agent context、auto dream 均读取或更新 `soul.md` |
+| Plan Mode | `backend/app/services/plan_mode_gate.py` 提供 confirmed plan / version / hash 的 fail-closed 决策服务 |
+| Workflow Runtime | `backend/app/models/workflow.py`、`backend/app/services/workflow_runtime_service.py`，run = `RuntimeTask(task_type="workflow")`，下挂 `WorkflowStep`、`WorkflowLeafCall`、`WorkflowQuota` |
 | Enterprise Permission Control | `backend/app/core/permissions.py`、`backend/app/models/agent.py` 中的 `AgentPermission`、`backend/app/models/security_audit.py` 中的 `ResourcePermission` |
 | Tool Governance | `backend/app/tools/governance.py`、`backend/app/services/capability_gate.py`、`backend/app/models/capability_policy.py` |
 | Approval Flow | `backend/app/models/audit.py` 中的 `ApprovalRequest`，以及 runtime/tool governance 测试 |
@@ -151,18 +161,19 @@ Hive 的定位不是替代所有 Agent，而是成为企业 Agent 的资产层�
 | 多租户基础 | `tenant_id` 贯穿核心模型，核心表已有 RLS migration，LLM、工具、通道配置按租户隔离 |
 | 企业通道 | Feishu/Lark、Slack、Discord、DingTalk、WeCom、Teams API 或 runtime 模块 |
 | HR Agent 创建 | `create_digital_employee` 工具和 HR Agent endpoint 测试 |
-| 测试基础 | 当前仓库约 191 个 backend test 文件、17 个 frontend test 文件 |
+| 测试基础 | 当前工作树可核验：454 个 backend `test_*.py` 文件、98 个 frontend test/spec 文件 |
 
 ### 5.2 当前阶段判断
 
 Hive 已经不是 PPT 概念。它具备一个 Agent 资产中台的底层骨架：
 
-- 身份层：Agent 有持久人格和岗位契约；
-- 记忆层：工作过程能沉淀成长期记忆；
-- 权限层：用户、部门、租户、资源和 Agent 工具能力都能被分层控制；
-- 审批层：高风险工具调用可被策略和审批拦截；
+- 身份层：Agent 有持久人格、岗位契约和租户归属；
+- 记忆层：工作过程以 Markdown truth source 沉淀，派生索引可重建；
+- 确认层：Plan Mode 处理自治行为开始前的人类确认边界；
+- 执行层：Workflow Runtime 用 step / leaf journal 承载可恢复的确定性执行；
+- 治理层：工具调用被 Security Zone、Capability Policy、Approval / Audit 分层控制；
 - 通道层：Agent 能进入企业已有沟通场景；
-- 租户层：公司级隔离和配置已经进入架构。
+- 资产层：skill / workflow / subagent 从 agent 实践晋升为公司库资产。
 
 下一阶段重点不应是继续堆通用能力，而是让首批客户用 HR-agent 创建他们自己的部门 Agent，验证 Hive 作为公司资产的可继承性。
 
